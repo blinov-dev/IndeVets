@@ -5,6 +5,7 @@
   border-radius: 50px;
   width: 90%;
   display: flex;
+  gap: 10px;
   justify-content: space-between;
   align-items: center;
   position: absolute;
@@ -43,4 +44,26 @@
     border-color: $main-color;
     color: $white;
   }
+}
+
+@media (min-width: $width-tablet) {
+  .header {
+    padding: 9px 16px;
+  }
+  .nav__list {
+    gap: 10px;
+  }
+  .nav__link {
+    padding: 5px 10px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .login {
+    padding: 5px 10px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $width-desktop) {
 }
