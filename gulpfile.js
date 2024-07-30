@@ -103,7 +103,7 @@ export function optimizeRaster () {
           {
             format,
             rename: { suffix: `@${density}x` },
-            width: ({ width }) => Math.ceil(width * density / RAW_DENSITY),
+            // width: ({ width }) => Math.ceil(width * density / RAW_DENSITY),
             jpegOptions: { progressive: true },
           },
         );

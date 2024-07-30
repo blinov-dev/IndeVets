@@ -1,6 +1,6 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее*/
 
-/* Для скрытия элементов со страницы, но видимости для скринридеров */
+/* Для скрытия элементов со страницы, но видимости для СР */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -14,7 +14,6 @@
 
 html {
   height: 100%;
-  background-color: $light-grey;
 }
 
 body {
@@ -25,11 +24,11 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  font-family: $main-font-family, "Arial", sans-serif;
+  font-family: $second-font-family, "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: $black;
+  color: $main-color;
   background-color: $white;
   @media (min-width: $width-tablet) {
     max-width: 1200px;
@@ -45,25 +44,4 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-}
-
-// Класс навешивается по умолчанию на боди, и отработает если не загрузятся скрипты.
-// Изначально, при отработке js данный класс удаляется.
-.no-js {
-  .header {
-    flex-wrap: wrap;
-  }
-  .nav-toggle {
-    display: none;
-  }
-  .nav {
-    transform: translateY(0);
-    order: 1;
-  }
-
-  @media (min-width: $width-tablet) {
-    .nav {
-      order: 0;
-    }
-  }
 }

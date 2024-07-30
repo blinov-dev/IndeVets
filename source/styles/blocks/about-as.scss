@@ -1,0 +1,121 @@
+.about-as {
+  padding: 0 190px;
+  padding-top: 300px;
+  padding-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-as__header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 5px;
+  max-width: 600px;
+  margin-bottom: 100px;
+}
+
+.about-as__sub-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30.01px;
+  color: $second-color;
+}
+
+.about-as__title {
+  font-family: $second-font-family;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 64.45px;
+  color: $main-color;
+}
+
+.how-works__list {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.how-works__item {
+  display: flex;
+  gap: 130px;
+  align-items: center;
+}
+
+.right-position {
+  order: 1;
+}
+
+.how-works__preview {
+  min-width: 285px;
+  width: 285px;
+  height: 285px;
+  background-color: $gray;
+  border-radius: 50%;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+  }
+}
+
+.works-one {
+  &::after {
+    width: 185px;
+    height: 288px;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    margin: auto;
+    background-image: url("../../icons/how-works-1.svg");
+  }
+}
+.works-two {
+  &::after {
+    width: 250px;
+    height: 304px;
+    bottom: 30px;
+    left: -20px;
+    background-image: url("../../icons/how-works-2.svg");
+  }
+}
+.works-three {
+  &::after {
+    width: 195px;
+    height: 258px;
+    top: -10px;
+    right: 0;
+    background-image: url("../../icons/how-works-3.svg");
+  }
+}
+
+.how-works__info {
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.how-works__sub-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27.28px;
+  color: $sub-header-color;
+}
+
+.how-works__title {
+  font-family: $second-font-family;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 47px;
+  color: $header-color;
+}
+
+.how-works__description {
+  font-size: 16px;
+  line-height: 28.8px;
+  color: $main-color;
+}

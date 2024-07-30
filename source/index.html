@@ -1,17 +1,261 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="preload" href="#" type="font/woff2" as="font">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
-    <main>
-      <h1>Страница для старта</h1>
-    </main>
-  </body>
+<html class="page" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>IndeVets</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+  <header class="header">
+    <a class="logo" href="index.html">
+      <img class="logo__img" src="images/logo.svg" alt="IndeVets" width="125" height="33">
+    </a>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="#">Veterinarians</a>
+        </li>
+
+        <li class="nav__item">
+          <a class="nav__link" href="#">Hospitals</a>
+        </li>
+
+        <li class="nav__item">
+          <a class="nav__link" href="#">Why IndeVets?</a>
+        </li>
+      </ul>
+    </nav>
+
+    <a class="login" href="#">Login</a>
+  </header>
+
+  <main class="main">
+    <h1 class="visually-hidden">IndeVets good vet-clinic!</h1>
+
+    <div class="main-promo">
+      <div class="main-promo__content">
+        <h2 class="main-promo__title">Veterinary staffing done right.</h2>
+        <p class="main-promo__description">
+          IndeVets is on a mission to make veterinary medicine better. We unite the nation’s top veterinarians and
+          animal hospitals to deliver what matters most in animal care –– happy, healthy doctors performing at their
+          best.
+        </p>
+      </div>
+
+      <div class="main-promo__image">
+        <img class="promo-img" src="images/promo-img.svg" alt="Human and animals" width="320" height="361">
+      </div>
+
+
+      <div class="promo-links">
+        <div class="promo-links__info veterinarians-link">
+          <a class="promo-links__title" href="#">Veterinarians</a>
+          <p class="promo-links__description">
+            Apply to become an IndeVet
+          </p>
+        </div>
+
+        <div class="promo-links__info  hospitals-link">
+          <a class="promo-links__title" href="#">Hospitals</a>
+          <p class="promo-links__description">
+            Become an IndeVets partner
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section class="about-as">
+      <div class="about-as__header">
+        <p class="about-as__sub-title">Let’s start at the beginning</p>
+
+        <h2 class="about-as__title">
+          How IndeVets Works
+        </h2>
+      </div>
+
+      <div class="how-works">
+        <ul class="how-works__list">
+          <li class="how-works__item">
+            <div class="how-works__preview left-position works-one">
+            </div>
+            <div class="how-works__info">
+              <span class="how-works__sub-title">Step one...</span>
+              <h2 class="how-works__title">
+                We hire great vets.
+              </h2>
+              <p class="how-works__description">
+                Not just any doctor can become an IndeVet. We thoroughly vet and hire only the best, highly qualified
+                doctors. They become a part of our team, earn market-leading pay and benefits, and gain the freedom to
+                choose when and where they work.
+              </p>
+            </div>
+          </li>
+
+          <li class="how-works__item">
+            <div class="how-works__preview right-position works-two">
+            </div>
+            <div class="how-works__info">
+              <span class="how-works__sub-title">Next...</span>
+              <h2 class="how-works__title">
+                We partner with the best workplaces.
+              </h2>
+              <p class="how-works__description">
+                We’ve built partnerships with more than 800 forward-thinking, best-in-class hospitals. We expect a lot
+                from our vets, so the same applies to our hospitals. We partner with hospitals that not only have high
+                medical standards, but also have a commitment to maintaining a healthy workplace for staff and patients.
+              </p>
+            </div>
+          </li>
+
+          <li class="how-works__item">
+            <div class="how-works__preview left-position works-three">
+            </div>
+            <div class="how-works__info">
+              <span class="how-works__sub-title">The result?</span>
+              <h2 class="how-works__title">
+                Happy vets. Happy hospitals. Better medicine.
+              </h2>
+              <p class="how-works__description">
+                When doctors are in control of their schedules, they’re happier. Same goes for hospital teams who can
+                breathe easier about their staffing. Together, our doctors and hospital partners are making the world of
+                veterinary medicine a better, happier place.</p>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="mission">
+      <div class="mission__preview">
+      </div>
+      <div class="mission__info">
+        <span class="mission__sub-title">Who We Are</span>
+        <h2 class="mission__title">
+          Our Mission
+        </h2>
+        <p class="mission__description">
+          Our team is united by a mission to make veterinary medicine better. We’ve been through the long rotations, the
+          office drama, and the last-minute schedule changes. It drove the joy out of our jobs and, more importantly,
+          out of our lives. So we took it upon ourselves to make a change.</p>
+        <a class="mission__link" href="#">Why IndeVets?</a>
+      </div>
+    </section>
+
+    <section class="info">
+      <div class="info__preview">
+      </div>
+      <div class="info__content">
+        <h2 class="info__title">
+          Sounds pretty good, right? Let’s do this.
+        </h2>
+        <div class="info__text-container">
+          <p class="info__description">
+            I want to be an IndeVet. Take me to the application page!</p>
+
+          <p class="info__description">
+            We want to be one of your awesome hospital partners.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="links-block">
+      <div class="links-block__info">
+        <h3 class="links-block__title">Veterinarians</h3>
+        <ul class="links-block__list">
+          <li class="links-block__item">
+            <a class="links-block__link" href="#">Explore IndeVets</a>
+          </li>
+          <li class="links-block__item">
+            <a class="links-block__link" href="#">Become an IndeVet</a>
+          </li>
+          <li class="links-block__item">
+            <a class="links-block__link" href="#">FAQs for Veterinarians</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="links-block__info">
+        <h3 class="links-block__title">Hospitals</h3>
+        <ul class="links-block__list">
+          <li class="links-block__item">
+            <a class="links-block__link" href="#">Partnering with IndeVets</a>
+          </li>
+          <li class="links-block__item">
+            <a class="links-block__link" href="#">Become a Partner</a>
+          </li>
+          <li class="links-block__item">
+            <a class="links-block__link" href="#">Frequently Asked Questions</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="links-block__info">
+        <div class="links-block__decor">
+
+        </div>
+      </div>
+
+      <div class="links-block__info">
+        <h3 class="links-block__title">Find Us</h3>
+        <ul class="links-block__list">
+          <li class="links-block__item">
+            <span class="links-block__address ">990 Spring Garden Street</span>
+            <span class="links-block__address ">Suite 402</span>
+            <span class="links-block__address ">Philadelphia, PA 19123</span>
+          </li>
+          <li class="links-block__item">
+            <a class="links-block__link" href="#">(833) IndeVets</a>
+            <a class="links-block__link" href="tel:+88334633838">(833) 463-3838</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <nav class="footer-nav">
+      <ul class="footer-nav__list">
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">Why IndeVets?</a>
+        </li>
+
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">Blog</a>
+        </li>
+
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">Jobs</a>
+        </li>
+
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">Contact Us</a>
+        </li>
+
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">Login</a>
+        </li>
+
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">Privacy Policy</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="footer__copyright">
+      <p>BlinovAV © IndeVets 2021</p>
+    </div>
+  </footer>
+</body>
+
 </html>
