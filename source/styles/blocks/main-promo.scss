@@ -88,3 +88,48 @@
   line-height: 28px;
   color: $second-color;
 }
+
+@media (min-width: $width-tablet) {
+  .main-promo {
+    padding: 200px 80px 150px;
+  }
+  .main-promo__title {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .main-promo__description {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .promo-links__info {
+    padding: 30px 20px 30px 100px;
+    &::before {
+      top: 35px;
+      left: 20px;
+    }
+  }
+  .veterinarians-link {
+    &::before {
+      width: 52px;
+      height: 56px;
+    }
+  }
+  .hospitals-link {
+    &::before {
+      width: 59px;
+      height: 50px;
+    }
+  }
+  .promo-links__title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .promo-links__description {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+@media (min-width: $width-desktop) {
+}

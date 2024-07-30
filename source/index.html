@@ -58,7 +58,12 @@
       </div>
 
       <div class="main-promo__image">
-        <img class="promo-img" src="images/promo-img.svg" alt="Human and animals" width="320" height="361">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="images/promo-img.svg" width="320" height="361">
+
+          <source media="(min-width: 768px)" srcset="images/promo-img.svg" width="220" height="261">
+          <img class="promo-img" src="images/promo-img.svg" alt="Human and animals" width="120" height="161">
+        </picture>
       </div>
 
 
