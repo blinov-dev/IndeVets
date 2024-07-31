@@ -9,10 +9,15 @@
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  z-index: 1;
+  z-index: 3;
+}
+
+.logo {
+  z-index: 3;
 }
 
 .login {
+  z-index: 3;
   padding: 5px 10px;
   font-size: 18px;
   line-height: 20px;

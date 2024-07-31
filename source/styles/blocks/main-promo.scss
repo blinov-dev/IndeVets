@@ -2,9 +2,10 @@
   position: relative;
   width: 100%;
   background-color: $main-color;
-  padding: 260px 135px 190px;
+  padding: 100px 20px 30px;
   display: grid;
-  grid-template-columns: 1fr 0.6fr;
+  grid-template-columns: 1fr;
+  text-align: center;
 }
 
 .main-promo__content {
@@ -14,96 +15,114 @@
 
 .main-promo__title {
   color: $header-color;
-  font-size: 80px;
-  line-height: 102px;
+  font-size: 30px;
+  line-height: 36px;
   margin-bottom: 20px;
   font-family: $main-font-family;
 }
 
 .main-promo__description {
-  max-width: 542px;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 18px;
   color: $white;
+  margin-bottom: 20px;
 }
 
 .main-promo__image {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  order: -1;
 }
 
 .promo-links {
-  position: absolute;
-  bottom: -15%;
-  left: 50%;
-  width: 75%;
-  transform: translateX(-50%);
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
-  margin: 0 auto;
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
 
 .promo-links__info {
-  position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: $gray;
-  padding: 40px 30px 40px 170px;
+  padding: 20px;
   &::before {
     content: "";
-    position: absolute;
-    top: 45px;
-    left: 30px;
+    position: static;
+    margin-bottom: 5px;
   }
 }
 
 .veterinarians-link {
   &::before {
-    width: 104px;
-    height: 111px;
+    width: 82px;
+    height: 91px;
     background-image: url("../../icons/promo-link-1.svg");
   }
 }
 .hospitals-link {
   &::before {
-    width: 119px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     background-image: url("../../icons/promo-link-2.svg");
   }
 }
 
 .promo-links__title {
   color: $header-color;
-  margin-bottom: 20px;
   font-family: $main-font-family;
+  margin-bottom: 5px;
   word-break: break-all;
-  font-size: 37px;
-  line-height: 43.36px;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .promo-links__description {
-  max-width: 220px;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 18px;
   color: $second-color;
 }
 
 @media (min-width: $width-tablet) {
   .main-promo {
-    padding: 200px 80px 150px;
+    grid-template-columns: 1fr 0.6fr;
+    padding: 160px 80px 120px;
+    text-align: left;
   }
   .main-promo__title {
     font-size: 40px;
     line-height: 60px;
   }
   .main-promo__description {
+    max-width: 542px;
     font-size: 18px;
     line-height: 24px;
+    margin-bottom: 0;
   }
+  .main-promo__image {
+    justify-content: flex-end;
+    order: 0;
+  }
+
+  .promo-links {
+    position: absolute;
+    bottom: -15%;
+    left: 50%;
+    width: 75%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin: 0 auto;
+  }
+
   .promo-links__info {
     padding: 30px 20px 30px 100px;
-    &::before {
+    align-items: flex-start;
+    position: relative;
+    &::before,
+    &::after {
+      position: absolute;
       top: 35px;
       left: 20px;
     }
@@ -118,10 +137,10 @@
     &::before {
       width: 59px;
       height: 50px;
+      margin-bottom: 0;
     }
   }
   .promo-links__title {
-    margin-bottom: 20px;
     font-size: 20px;
     line-height: 24px;
   }
@@ -134,5 +153,39 @@
 @media (min-width: $width-desktop) {
   .main-promo {
     padding: 260px 135px 190px;
+  }
+  .promo-links__info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: $gray;
+    padding: 20px;
+    &::before {
+      content: "";
+      top: 45px;
+      left: 30px;
+    }
+  }
+  .veterinarians-link {
+    &::before {
+      width: 104px;
+      height: 111px;
+    }
+  }
+  .hospitals-link {
+    &::before {
+      width: 119px;
+      height: 100px;
+    }
+  }
+
+  .promo-links__title {
+    font-size: 37px;
+    line-height: 43.36px;
+  }
+  .promo-links__description {
+    max-width: 220px;
+    font-size: 20px;
+    line-height: 28px;
   }
 }

@@ -1,42 +1,22 @@
 .info {
-  padding: 90px 150px;
-  display: grid;
-  grid-template-columns: 240px 1fr;
-  gap: 160px;
   background-color: $header-color;
+  color: $white;
 }
 
 .info__preview {
-  min-width: 237px;
-  width: 237px;
-  height: 261px;
-  position: relative;
   background-image: url("../../icons/info-img.svg");
 }
 
-.info__content {
-  display: flex;
-  flex-direction: column;
-  max-width: 580px;
-}
-
-.info__title {
-  font-family: $second-font-family;
-  font-size: 55px;
-  font-weight: 400;
-  line-height: 64.45px;
-  color: $white;
-  margin-bottom: 58px;
-}
 
 .info__text-container {
   display: flex;
-  gap: 100px;
+  gap: 20px;
 }
 
-.info__description {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 27.28px;
-  color: $white;
+@media (min-width: $width-tablet) {
+  .info__text-container {
+    gap: 100px;
+  }
+
 }
+

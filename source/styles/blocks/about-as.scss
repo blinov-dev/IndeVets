@@ -1,7 +1,5 @@
 .about-as {
-  padding: 0 150px;
-  padding-top: 300px;
-  padding-bottom: 90px;
+  padding: 30px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,49 +11,47 @@
   flex-direction: column;
   text-align: center;
   gap: 5px;
-  max-width: 600px;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
 
 .about-as__sub-title {
-  font-size: 22px;
+  font-size: 14px;
   font-weight: 700;
-  line-height: 30.01px;
+  line-height: 18px;
   color: $second-color;
 }
 
 .about-as__title {
   font-family: $second-font-family;
-  font-size: 55px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 64.45px;
+  line-height: 26px;
   color: $main-color;
 }
 
 .how-works__list {
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 20px;
 }
 
 .how-works__item {
   display: flex;
-  gap: 130px;
+  gap: 20px;
   align-items: center;
+  flex-direction: column;
 }
 
 .right-position {
-  order: 1;
+  order: -1;
 }
 
 .how-works__preview {
-  min-width: 285px;
-  width: 285px;
-  height: 285px;
+  width: 150px;
+  height: 150px;
   background-color: $gray;
   border-radius: 50%;
   position: relative;
-
   &::after {
     content: "";
     position: absolute;
@@ -64,28 +60,28 @@
 
 .works-one {
   &::after {
-    width: 185px;
-    height: 288px;
+    width: 120px;
+    height: 150px;
     left: 0;
     right: 0;
-    bottom: 20px;
+    bottom: 10px;
     margin: auto;
     background-image: url("../../icons/how-works-1.svg");
   }
 }
 .works-two {
   &::after {
-    width: 250px;
-    height: 304px;
-    bottom: 30px;
-    left: -20px;
+    width: 120px;
+    height: 150px;
+    left: 0;
+    bottom: 10px;
     background-image: url("../../icons/how-works-2.svg");
   }
 }
 .works-three {
   &::after {
-    width: 195px;
-    height: 258px;
+    width: 120px;
+    height: 150px;
     top: -10px;
     right: 0;
     background-image: url("../../icons/how-works-3.svg");
@@ -93,29 +89,148 @@
 }
 
 .how-works__info {
-  max-width: 540px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  text-align: center;
+  gap: 5px;
 }
 
 .how-works__sub-title {
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 700;
-  line-height: 27.28px;
+  line-height: 18px;
   color: $sub-header-color;
 }
 
 .how-works__title {
   font-family: $second-font-family;
-  font-size: 40px;
+  font-size: 22px;
   font-weight: 700;
-  line-height: 47px;
+  line-height: 26px;
   color: $header-color;
 }
 
 .how-works__description {
-  font-size: 16px;
-  line-height: 28.8px;
+  font-size: 14px;
+  line-height: 18px;
   color: $main-color;
+}
+
+@media (min-width: $width-tablet) {
+  .about-as {
+    padding: 0 80px;
+    padding-top: 200px;
+    padding-bottom: 60px;
+  }
+
+  .about-as__header {
+    max-width: 600px;
+    margin-bottom: 60px;
+  }
+
+  .about-as__sub-title {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .about-as__title {
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 64.45px;
+  }
+
+  .how-works__list {
+    gap: 30px;
+  }
+
+  .how-works__item {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .right-position {
+    order: 1;
+  }
+
+  .how-works__preview {
+    min-width: 285px;
+    width: 285px;
+    height: 285px;
+    background-color: $gray;
+    border-radius: 50%;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+    }
+  }
+
+  .works-one {
+    &::after {
+      width: 185px;
+      height: 288px;
+      bottom: 20px;
+      margin: auto;
+    }
+  }
+  .works-two {
+    &::after {
+      width: 250px;
+      height: 304px;
+      bottom: 30px;
+      left: -20px;
+    }
+  }
+  .works-three {
+    &::after {
+      width: 195px;
+      height: 258px;
+    }
+  }
+
+  .how-works__info {
+    max-width: 540px;
+    text-align: left;
+    gap: 10px;
+  }
+
+  .how-works__sub-title {
+    font-size: 20px;
+    line-height: 27.28px;
+  }
+  .how-works__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .how-works__description {
+    font-size: 16px;
+    line-height: 28.8px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .about-as {
+    padding: 0 150px;
+    padding-top: 300px;
+    padding-bottom: 90px;
+  }
+  .about-as__header {
+    margin-bottom: 100px;
+  }
+  .about-as__sub-title {
+    font-size: 22px;
+    line-height: 30.01px;
+  }
+
+  .how-works__list {
+    gap: 80px;
+  }
+  .how-works__item {
+    flex-direction: row;
+    gap: 130px;
+  }
+  .how-works__title {
+    font-size: 40px;
+    line-height: 47px;
+  }
 }
