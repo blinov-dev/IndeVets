@@ -161,9 +161,10 @@
     background-color: $gray;
     padding: 20px;
     &::before {
-      content: "";
-      top: 45px;
-      left: 30px;
+      position: absolute;
+      top: 25px;
+      left: auto;
+      right: 35px;
     }
   }
   .veterinarians-link {
